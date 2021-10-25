@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style-type: none;
+    box-sizing: border-box;
+}
+ body{
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+ }
+ nav{
+
+    background: rgb(0, 136, 248);
+    height: 80px;
+    width: 100%;
+ }
+label.logo {
+ color:white;
+ font-size: 35px;
+ line-height: 80px;
+ padding: 0 50px;
+ font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0px 5px;
+}
+nav ul li a{
+ color: white;
+ font-size: 17px;
+ padding: 7px 13px;
+ border-radius: 3px;
+ text-transform: uppercase;
+}
+
+a.active,a:hover{
+background: #1b9bff;
+transition: .5s;
+}
+
+.chkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    section{
+        display: none;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .chkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1e201e;
+        top: 80px;
+        left: 0;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    section{
+        display: none;
+    }
+    div{
+        display: block;
+    }
+    a:hover,:a.active{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+
+}
+
+.pr-charts{
+    text-align: center;
+    margin-top: 200px;
+}
+.pr-charts .pr-chart-ctrl{
+    display:block; 
+    float:left; 
+    width:25%;
+    min-height:200px;
+}
+.pr-charts .pr-chart-ctrl .pr-chart{
+    display:block; 
+    position:relative; 
+    width:100%; 
+    margin:0 0 20px 0; 
+    text-align:center;
+}
+.pr-charts .pr-chart-ctrl .pr-chart canvas{
+    display:block; 
+    margin:0 auto; 
+    padding:0; 
+    vertical-align:top;
+}
+.pr-charts .pr-chart-ctrl .pr-chart i{
+    position:absolute; 
+    top:0; left:0; 
+    width:100%; 
+    height:200px; 
+    line-height:200px; 
+    font-size:18px; 
+    font-style:normal;
+
+}
+.pr-charts .pr-chart-ctrl p{
+    position: relative;
+    margin:0; 
+    padding:0; 
+    text-transform:uppercase;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    top: 30px;
+}
+
+.PS{
+    width: 50px;
+    height: 50px;
+}
+.PR{
+    width: 50px;
+    height: 50px;
+}
+.AE{
+    width: 50px;
+    height: 50px;
+}
+.WEB{
+    width: 50px;
+    height: 50px;
+}

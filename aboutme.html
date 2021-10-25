@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+    <link href="aboutme.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <head>
+        <title>
+            about me
+        </title>
+        <body>
+            <nav>
+                <input type="checkbox" id="check">
+                <label for="check" class="chkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
+                <label class="logo">ABOUT ME</label>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a class= "active" href="aboutme.html">About Me</a></li>
+                    <li><a href="Portofolio.html">Portofolio</a></li>
+                    <li><a href="myskill.html">My Skill</a></li>
+                    <li><a href="Feedback.HTML">Feedback</a></li>
+                </ul>
+            </nav>
+            <div class="box">
+                <img class="Profile" src="Profile.jpg">
+                <div class="btn">
+                    <i class="fas fa-chevron-right"></i>          
+                </div>
+                <div class="box2">
+                    <p>Im beginner designer and web development.To achieve my goal as web development I study HTML CSS And javascript Lenguage.
+                        As a design freelancer, I have design for publisher and clients such a people who need my job,people who like my design and several other. 
+                        Im good in choose model Like UI/UX some application or web .i like some  challenge,team working and I am a communicative person as well
+                        Im currently study in BINUS Malang University as computer science  student  until now 
+                    </p>
+                        <div class="box3">
+                            <div class="icon"><i class="logo1 fas fa-birthday-cake"></i>
+                                <div class="icon-conten1">
+                                    <span>19</span>
+                                </div>
+                                <div class="icon"onclick="window.location='https://www.google.com/maps/place/Jl.+Glogor+Indah+IB,+Pemogan,+Kec.+Denpasar+Sel.,+Kota+Denpasar,+Bali+80221/@-8.7018433,115.1918514,17.46z/data=!4m8!1m2!10m1!1e2!3m4!1s0x2dd2413260cf207b:0x67a0c34ef2505669!8m2!3d-8.7019056!4d115.1934034'">
+                                    <i class="logo fas fa-map-marker-alt"></i>
+                                    <div class="icon-conten2">
+                                        <span >Location</span>
+                                    </div>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+            <script type="text/javascript">
+                    $(document).ready(function(){
+            
+            $(".btn").on("click",function(){
+
+                if($(".box2").css("width") == "0px"){
+                    $(".box2").animate({  width: "500px" },400);
+                $(".btn i").removeClass();
+                $(".btn i").addClass("fas fa-chevron-right");
+                }else{
+                    $(".box2").animate({  width: "0px" },400);
+                $(".btn i").removeClass();
+                $(".btn i").addClass("fas fa-chevron-left");
+                }
+                
+              $(".btn").css({ 'transform' : 'rotate(180deg)' });
+            });
+        });
+        </script>
+        </body> 
+    </head>
+</html>
